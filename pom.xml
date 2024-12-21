@@ -99,7 +99,19 @@
                 <type>pom</type>
             </dependency>
         </dependencies>
-    </dependencyManagement>
+     </dependencyManagement>
+           <distributionManagement>
+           <repository>
+             <id>maven-releases</id>
+             <!-- CHANGE HERE by your team Nexus server -->
+             <url>http://3.111.41.254:8081/repository/maven-releases//</url>
+           </repository>
+           <snapshotRepository>
+             <id>maven-snapshots</id>
+             <!-- CHANGE HERE by your team Nexus server -->
+             <url>http://3.111.41.254:8081/repository/maven-snapshots/</url>
+             </snapshotRepository>
+      </distributionManagement>
 
     <dependencies>
         <dependency>
