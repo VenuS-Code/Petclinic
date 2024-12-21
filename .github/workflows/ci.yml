@@ -22,7 +22,8 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '11'
-        # distribution: 'adoptopenjdk'  # Use AdoptOpenJDK
+        distribution: 'adoptium'  # Updated from adoptopenjdk to adoptium
+
 
     # Cache Maven dependencies for faster builds
     - name: Cache Maven dependencies
